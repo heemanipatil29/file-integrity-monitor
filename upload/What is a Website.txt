@@ -1,0 +1,234 @@
+Step 1: What is a Website?
+
+Imagine you own a restaurant.
+
+Customer = Browser (Chrome)
+Waiter = Internet
+Kitchen = Python Server
+Food = Web Page
+
+When someone opens a website:
+
+User → Browser → Server → Response → Browser
+
+Example:
+
+You type:
+www.google.com
+
+Browser asks Google server:
+"Give me the page."
+
+Google server sends:
+HTML + CSS + JavaScript
+
+Browser shows the page.
+Step 2: Why Python?
+
+Python is used on the server side.
+
+Python can:
+
+✅ Store user data
+
+✅ Login users
+
+✅ Connect databases
+
+✅ Process forms
+
+✅ Run cybersecurity tools
+
+Example:
+
+name = "Heemani"
+
+print("Welcome", name)
+
+Website:
+
+User enters name
+↓
+Python receives name
+↓
+Python sends response
+↓
+Website shows Welcome Heemani
+Step 3: Learn HTML First
+
+HTML is the skeleton.
+
+Create:
+
+<html>
+<head>
+<title>My Website</title>
+</head>
+
+<body>
+
+<h1>Hello World</h1>
+
+<p>I am learning web development.</p>
+
+</body>
+</html>
+
+Think:
+
+<h1> = Big Heading
+
+<p> = Paragraph
+
+<body> = Visible Part
+Step 4: Learn CSS
+
+CSS is makeup.
+
+Without CSS:
+
+Plain Website
+
+With CSS:
+
+Beautiful Website
+
+Example:
+
+<h1 style="color:red;">
+Hello
+</h1>
+Step 5: Learn Flask (Python Website Framework)
+
+Install:
+
+pip install flask
+
+Create:
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello Heemani"
+
+app.run(debug=True)
+
+Run it.
+
+Open:
+
+http://127.0.0.1:5000
+
+Now your Python program is a website.
+
+Remember This Forever
+
+Think of Flask like this:
+
+Route = Address
+
+Function = Worker
+
+Return = Response
+
+Example:
+
+@app.route("/about")
+def about():
+    return "About Me"
+
+Meaning:
+
+User visits:
+
+/about
+
+Python runs:
+
+about()
+
+Website shows:
+
+About Me
+Step 6: Build This Mini Project
+
+Create:
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return """
+    <h1>Welcome</h1>
+    <p>This is my first website.</p>
+    """
+
+app.run(debug=True)
+
+Logic:
+
+User visits homepage
+↓
+Flask receives request
+↓
+home() runs
+↓
+HTML returned
+↓
+Browser displays page
+Step 7: Your Learning Order
+
+Week 1
+
+Python Basics
+Functions
+Loops
+
+Week 2
+
+HTML
+CSS
+
+Week 3
+
+Flask
+
+Week 4
+
+Forms
+Login Page
+
+Week 5
+
+Database (SQLite)
+
+Week 6
+
+Deploy Website
+Cybersecurity Projects You Can Build Later
+Password Strength Checker Website
+Port Scanner Dashboard
+File Encryption Website
+Vulnerability Scanner Dashboard
+Security Log Analyzer
+Malware Detection Dashboard
+
+The best way to remember is:
+
+For every new concept, first draw the flow on paper, then write the code.
+
+For example, before coding a login page, draw:
+
+Username Input
+      ↓
+Submit Button
+      ↓
+Python Checks
+      ↓
+Correct? → Login Success
+Wrong? → Error
