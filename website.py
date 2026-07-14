@@ -97,4 +97,8 @@ def monitor():
     <p style="color:#00FF88;word-break:break-all;">{current_hash}</p>
     </body></html>
     """
-app.run(debug=True)
+import os
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port, debug=False)
